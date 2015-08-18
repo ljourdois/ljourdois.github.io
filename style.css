@@ -1,0 +1,78 @@
+html{
+	
+}
+
+body{
+	padding:0;
+	margin:0; 
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/* ----- Header ----- */
+header{
+	position:fixed;
+	top:0;
+	z-index:100;
+	width: 100%;
+	background: white;
+}
+header nav{
+	height: 50px;
+	box-shadow: 0px 1px 10px #868686;
+}
+header nav ul{
+	margin:0;
+	padding: 15px;
+}
+header nav ul li{
+	display: inline;
+}
+
+/* ---- Contenu ----- */
+.content{
+	padding-top:50px;
+}
+.content .left{
+	width: 215px; 
+	position: absolute;
+    border-top: 250px solid #00BCD4;
+    border-right: 30px solid transparent;
+    height: 0px;
+}
+.content .left-bottom{
+	width: 155px; 
+	position: absolute;
+    border-top: 500px solid #0097A7;
+    border-right: 60px solid transparent;
+    height: 0px;
+	top: 300px;
+}
+.content .left-content{
+	position: absolute;
+}
+.content .left-content .name{
+	color: white;
+	font-size:30px;
+	line-height:38px;
+	margin-top:40px;
+	margin-left:30px;
+}
+.content .left-content .profession{
+	color: white;
+	font-size:20px;
+	line-height:28px;
+	margin-left:30px;
+	margin-top:20px;
+}
+.content .right-top{
+	width: 100%;
+	background-color: #FFEB3B;
+	height:170px;
+	position: absolute;
+}
+.content .right-top .right-top-content{
+	position: absolute;
+	left: 300px;
+}
