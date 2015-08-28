@@ -43,12 +43,12 @@ header nav ul li{
     height: 0px;
 }
 .content .left-bottom{
-	width: 155px; 
-	position: absolute;
-    border-top: 500px solid #0097A7;
-    border-right: 60px solid transparent;
+	width: 65px;
+    position: absolute;
+    border-top: 1225px solid #0097A7;
+    border-right: 150px solid transparent;
     height: 0px;
-	top: 300px;
+    top: 300px;
 }
 .content .left-content{
 	position: absolute;
