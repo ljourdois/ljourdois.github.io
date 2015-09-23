@@ -79,6 +79,30 @@ header nav ul li{
 	position: absolute;
 	left: 300px;
 }
+.content .right-top .right-top-content h3{
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.content .right-top .right-top-content p{
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: super;
+}
+.content .right-top .right-top-content p a{
+    color: #fff;
+}
+.content .right-top .right-top-content p a:hover{
+    color: rgba(255,255,255,0.8);
+}
+.content .right-top .right-top-content img{
+    margin-top: 5px;
+    margin-right: 5px;
+}
 
 .content .left-content-bottom{
 	position: absolute;
