@@ -50,6 +50,23 @@ header nav ul li{
     height: 0px;
     top: 300px;
 }
+.content .left-bottom .competences{
+	position: absolute;
+    bottom: 400px;
+    left: -55px;
+    z-index: 1;
+	-webkit-transform: rotate(270deg);
+       -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+         -o-transform: rotate(270deg);
+			transform: rotate(270deg);
+}
+.content .left-bottom .competences h3{
+	margin-top: 0;
+	color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+}
 .content .left-content{
 	position: absolute;
 }
@@ -286,6 +303,9 @@ header nav ul li{
 		width: 25px;
 		border-top: 1525px solid #0097A7;
 		border-right: 190px solid transparent;
+	}
+	.content .left-bottom .competences{
+		bottom: 700px;
 	}
 }
 
