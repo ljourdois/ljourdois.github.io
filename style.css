@@ -77,13 +77,14 @@ header nav ul li{
 }
 .content .right-top .right-top-content{
 	position: absolute;
-	left: 300px;
+	right: 300px;
+	width: 350px;
 }
 .content .right-top .right-top-content h3{
     color: #fff;
     font-size: 30px;
     font-weight: normal;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 5px;
 }
 .content .right-top .right-top-content p{
@@ -102,6 +103,15 @@ header nav ul li{
 .content .right-top .right-top-content img{
     margin-top: 5px;
     margin-right: 5px;
+}
+.content .right-top .ma-photo{
+	position:absolute; 
+	right:0; 
+	top:0;
+}
+.content .right-top .ma-photo img{
+	height:170px; 
+	margin-top:0;
 }
 
 .content .left-content-bottom{
@@ -146,8 +156,9 @@ header nav ul li{
 
 .content .right-content-bottom{
 	position: absolute;
-    left: 280px;
+    left: 400px;
     top: 240px;
+    max-width: 800px;
 }
 .content .right-content-bottom .exp-pro h3{
 	color: #FFEB3B;
@@ -192,6 +203,7 @@ header nav ul li{
 	color: #0097A7;
 	font-size: 30px;
 	font-weight: normal;
+	margin-top: 75px;
 }
 .content .right-content-bottom .form .date{
 	margin-left: 30px;
@@ -227,10 +239,72 @@ header nav ul li{
     position: relative;
 }
 
-.separation{
+.separation-content{
 	border: solid 2px #0097A7;
-    left: 0;
-    margin-top: 30px;
-    margin-bottom: 30px;
+	left: 0;
+	position: absolute;
+	top: 1030px;
+	width:100%;
 }
 
+
+/* -------- Responsive ---------- */
+@media screen and (min-width:1151px) and (max-width:1200px){
+	.content .right-content-bottom{
+		left: 300px;
+	}
+}
+
+@media screen and (min-width:901px) and (max-width:1150px){
+	.content .right-content-bottom{
+		max-width: 650px;
+		left: 270px;
+	}
+	.separation-content{
+		top: 1125px;
+	}
+	.content .right-top .right-top-content{
+		left: 275px;
+	}
+}
+
+@media screen and (min-width:701px) and (max-width:900px){
+	.content .right-content-bottom{
+		max-width: 400px;
+		left: 250px;
+	}
+	.separation-content{
+		top: 1400px;
+	}
+	.content .right-top .ma-photo{
+		display:none;
+	}
+	.content .right-top .right-top-content{
+		left: 275px;
+	}
+	.content .left-bottom {
+		width: 25px;
+		border-top: 1525px solid #0097A7;
+		border-right: 190px solid transparent;
+	}
+}
+
+@media screen and (max-width:700px){
+	.content .right-content-bottom{
+		max-width: 400px;
+		left: 35px;
+		top: 300px;
+	}
+	.separation-content {
+		top: 1475px;
+	}
+	.content .right-top .ma-photo{
+		display:none;
+	}
+	.content .right-top .right-top-content{
+		left: 275px;
+	}
+	.content .left-bottom {
+		display:none;
+	}
+}
