@@ -110,6 +110,7 @@ header nav ul li{
     margin-top: 0;
     display: inline-block;
     vertical-align: super;
+	font-weight:500;
 }
 .content .right-top .right-top-content p a{
     color: #fff;
