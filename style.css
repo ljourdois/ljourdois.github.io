@@ -1,5 +1,6 @@
 html{
-	
+	margin: auto;
+	padding: auto;
 }
 
 body{
@@ -8,6 +9,7 @@ body{
 	position: relative;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight:300;
+	color: #888;
 }
 
 
@@ -17,23 +19,203 @@ header{
 	top:0;
 	z-index:100;
 	width: 100%;
+	height: 65px;
 	background: white;
 }
+header a.site-title{
+	font-family: 'Parisienne', cursive;
+	font-size: 25px;
+	float: left;
+	margin-left: 25px;
+	color:#888;
+	text-decoration: none;
+	padding-top:15px;
+}
+header a.site-title:hover{
+	color:#97dec6;
+}
+
 header nav{
-	height: 50px;
+	text-align: right;
+	height: 65px;
 	box-shadow: 0px 1px 10px #868686;
 }
 header nav ul{
 	margin:0;
-	padding: 15px;
+	padding: 25px 15px  15px  15px;
 }
 header nav ul li{
 	display: inline;
+	padding: 25px 15px  15px  15px;
+}
+header nav ul li a{
+	color:#888;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	color:#97dec6;
 }
 
-/* ---- Contenu ----- */
+/* ---- Content Index ---- */
+.content #index-top{
+	height:450px;
+	background-color:#97dec6;
+}
+.content #index-top .photo{
+	text-align: center;
+}
+.content #index-top .photo img{
+	width: 200px;
+	height: 200px;
+	border-radius:50%;
+	margin-top: 50px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.content #index-top h1{
+	color:#699b8a;
+	font-family: 'Parisienne', cursive;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+.content #index-top h2{
+	color:#699b8a;
+	font-size: 25px;
+	font-weight:300;
+	margin-top:0;
+}
+
+.content #index-cv{
+	height:470px;
+	padding-top:65px;
+	background-color:#fff;
+	text-align: center;
+}
+.content #index-cv .index-content, .content #index-portfolio .index-content, .content #index-contact .index-content{
+	max-width:1024px;
+	text-align: center;
+	margin: auto;
+}
+.content #index-cv .index-content h2, .content #index-portfolio .index-content h2, .content #index-contact .index-content h2{
+	color:#699b8a;
+	font-size: 25px;
+	margin-top:0;
+	font-family:'Parisienne'; 
+	font-size:35px;
+}
+.content #index-cv .index-content div.bloc-cv{
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+	float: left;
+}
+.content #index-cv .index-content div.bloc-cv .img{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	background-color:#699b8a;
+	margin: auto;
+}
+.content #index-cv .index-content div.bloc-cv a.cv{
+	padding:10px 20px;
+	border-radius: 3px;
+	border: solid 3px #699b8a;
+	color: #699b8a;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.content #index-cv .index-content div.bloc-cv a.cv:hover{
+	color: #fff;
+	background: #699b8a;
+}
+.content #index-cv .index-content div.bloc-cv p{
+	font-size:18px;
+	font-weight: 300;
+}
+
+.content #index-cv .index-content div.bloc-cv p.bloc-cv-title{
+	font-size:18px;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+
+
+.content #index-portfolio{
+	height:170px;
+	padding-top:65px;
+	background-color:#97dec6;
+}
+.content #index-portfolio .index-content div.bloc-portfolio{
+	text-align: center;
+	width: 40%;
+	padding: 10px;
+	float: left;
+	background: white;
+	border-radius: 3px;
+	margin-left: 5%;
+	height: 200px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.25);
+	margin-bottom: 30px;
+}
+.content #index-portfolio .index-content a.portfolio{
+	padding:10px 20px;
+	border-radius: 3px;
+	border: solid 3px #699b8a;
+	color: #699b8a;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 30px;
+	background: #fff;
+}
+.content #index-portfolio .index-content a.portfolio:hover{
+	color: #fff;
+	background: #699b8a;
+}
+
+.content #index-contact{
+	height:400px;
+	padding-top:65px;
+	background-color:#fff;
+}
+.content #index-contact .index-content div.bloc-contact{
+	text-align: center;
+	width: 40%;
+	padding: 10px;
+	float: left;
+	margin-left: 5%;
+	font-size: 18px;
+}
+.content #index-contact .index-content div.bloc-contact div.social{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	background: #97dec6;
+	margin: auto;
+	float: left;
+	margin-left: 10px;
+	margin-bottom:10px;
+}
+.content #index-contact .index-content div.bloc-contact a.mail{
+	padding:10px 20px;
+	border-radius: 3px;
+	border: solid 3px #699b8a;
+	color: #699b8a;
+	text-decoration: none;
+	font-size: 18px;
+}
+.content #index-contact .index-content div.bloc-contact a.mail:hover{
+	color: #fff;
+	background: #699b8a;
+}
+.content #index-contact .index-content div.bloc-contact p{
+	margin-bottom: 40px;
+}
+
+
+/* ---- Contenu cv ----- */
 .content{
-	padding-top:50px;
+	padding-top:65px;
 }
 .content .left{
 	width: 215px; 
@@ -263,6 +445,18 @@ header nav ul li{
 	position: absolute;
 	top: 1030px;
 	width:100%;
+}
+
+
+footer{
+	background: #0f1613;
+	height: 50px;
+	width:100%;
+}
+footer p{
+	font-size: 13px;
+	padding-top: 17px;
+	padding-left:20px;
 }
 
 
