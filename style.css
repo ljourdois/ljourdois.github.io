@@ -186,7 +186,7 @@ header nav ul li a:hover{
 	margin-left: 5%;
 	font-size: 18px;
 }
-.content #index-contact .index-content div.bloc-contact div.social{
+.content #index-contact .index-content div.bloc-contact a.a-social div.social{
 	width:100px;
 	height:100px;
 	border-radius: 50%;
@@ -195,6 +195,9 @@ header nav ul li a:hover{
 	float: left;
 	margin-left: 10px;
 	margin-bottom:10px;
+}
+.content #index-contact .index-content div.bloc-contact a.a-social:hover div.social{
+	background: #699b8a;
 }
 .content #index-contact .index-content div.bloc-contact a.mail{
 	padding:10px 20px;
