@@ -52,7 +52,7 @@
 						<div class="img"><img src="img/comp-cv.png" alt="" width="70px" style="    margin-top: 28px;"/></div>
 						<p class="bloc-cv-title">Curriculum Vitae</p>
 						<!--div><a class="cv" href="cv.html">Consulter mon CV en ligne</a></div-->
-						<div style="margin-top:40px;"><a class="cv" id="ddl-cv" href="doc/cv-lauraJourdois.pdf">Télécharger mon CV<a></div>
+						<div style="margin-top:40px;"><a class="cv" onclick="ga('send', 'event', 'téléchargement-cv', 'click', 'pdf');" id="ddl-cv" href="doc/cv-lauraJourdois.pdf">Télécharger mon CV<a></div>
 					</div>
 				
 				</div>
@@ -65,7 +65,7 @@
 					<div class="bloc-portfolio"></div>
 					<div class="bloc-portfolio"></div>
 					<div class="bloc-portfolio"></div-->
-					<a id="ddl-portfolio" class="portfolio" target="_blank" href="doc/portfolio-lauraJourdois.pdf">Télécharger mon portfolio (PDF - 4.7 Mo)</a>
+					<a onclick="ga('send', 'event', 'téléchargement-portfolio', 'click', 'pdf');" id="ddl-portfolio" class="portfolio" target="_blank" href="doc/portfolio-lauraJourdois.pdf">Télécharger mon portfolio (PDF - 4.7 Mo)</a>
 
 				</div>
 			</div>
@@ -101,7 +101,7 @@
 		  ga('send', 'pageview');
 		</script>
 
-		<script>
+		<!--script>
 	      $(document).ready(function(){
 	        $('#ddl-portfolio').click(function() {
 	          ga('send', 'event', 'ddl-portfolio', 
@@ -116,7 +116,7 @@
 	                      'click', 'image');
 	        });
 	      });
-      	</script>
+      	</script-->
     
 
 	</body>
